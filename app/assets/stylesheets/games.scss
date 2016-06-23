@@ -74,6 +74,20 @@ li.game span{
   float:right;
   margin-right:5px;
 }
+
+li.game span.time {
+  float:left;
+  margin-left:5px;
+  font-size: .7em;
+  color: $lighterbg;
+}
+li.game span.time::before {
+  content: '(';
+}
+li.game span.time::after {
+  content: ')';
+}
+
 li.game.pending {
   color: $pending;
 }
@@ -82,6 +96,7 @@ li.game-spacer{
   border-right-width:1px;
   border-right-style: solid;
   min-height:50px;
+  padding-top: 10px;
 }
 
 li.game-bottom{
